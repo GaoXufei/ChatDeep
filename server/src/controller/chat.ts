@@ -21,6 +21,7 @@ interface loginData {
 class Socket {
   // 连接成功
   chat(socket: any){
+    // login指令触发
     socket
       .on('login', (data: loginData) => {
         

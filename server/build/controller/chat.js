@@ -18,6 +18,7 @@ var Socket = /** @class */ (function () {
     }
     // 连接成功
     Socket.prototype.chat = function (socket) {
+        // login指令触发
         socket
             .on('login', function (data) {
         });
