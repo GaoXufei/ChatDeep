@@ -6,6 +6,15 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+import './style/reset/normalize.css'
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
+
+Vue.use(ElementUI)
+
+import SocketIo from 'socket.io-client'
+
+Vue.prototype.$io = SocketIo;
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
